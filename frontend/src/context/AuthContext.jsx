@@ -9,7 +9,7 @@ export const AuthProvider = ({ children }) => {
     const [token, setToken] = useState(localStorage.getItem('token') || '');
     const [loading, setLoading] = useState(true);
 
-    const backendUrl = 'http://localhost:4000';
+    const backendUrl = 'https://jobsift-rrcx.onrender.com';
 
     useEffect(() => {
         const storedUser = localStorage.getItem('user');
